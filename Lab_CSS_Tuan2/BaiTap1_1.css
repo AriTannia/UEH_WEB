@@ -1,0 +1,85 @@
+/* Chung */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 960px;
+    height: 960px;
+    margin: auto;
+    padding: auto;
+    font-size: 14px;
+    background: #bbb;
+}
+
+/* Main */
+
+#header {
+    padding-top: 32px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: calc(calc(100% - 400px) / 2);
+}
+
+#List-introduce {
+    margin-top: 24px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.description,
+.Hero-item .Description {
+    margin: 16px 32px;
+    padding: 12px;
+    border: 3px solid  #fff;
+    border-radius: 8px;
+    background: gray;
+}
+
+.Hero-list {
+    position: relative;
+    list-style-type: none;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.Hero-item {
+    max-width: 250px;
+    width: 100%;
+}
+
+.Hero-item h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.Hero-item .Hero-item-content {
+    position: absolute;
+    max-width: 300px;
+}
+
+.Hero-item .Description {
+    position: relative;
+    min-height: 280px;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 2px 2px #000;
+    background: rgba(128, 128, 128, 0.8);
+}
+
+.Hero-item img {
+    max-width: 300px;
+    width: 100%;
+    min-height: 250px;
+    max-height: 300px;
+    height: 100%;
+    border-radius: 35px;
+}
+
+.Hero-item .Hero-item-imag {
+    margin: 230px 8px 128px 8px;
+}

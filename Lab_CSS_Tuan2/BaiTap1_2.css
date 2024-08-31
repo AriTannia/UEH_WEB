@@ -1,0 +1,113 @@
+/* Chung */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 1024px;
+    height: 1024px;
+    margin: auto;
+    padding: auto;
+    font-size: 14px;
+}
+
+/* Main */
+
+#site-header {
+    background: #bbb;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#site-header img {
+    width: 50px;
+    height: 50px;
+}
+
+#site-header .header-content {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px #000;
+    text-align: center;
+    padding: 8px 0 16px 8px;
+}
+
+.superheroes {
+    margin-top: 48px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.superhero {
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.superhero-content {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10%;
+    box-shadow: 1px -1px #000;
+}
+
+.superhero:hover {
+    transform: scale(1.25);
+    margin-left: 16px;
+    margin-right: 16px;
+    animation: rubberBand;
+    animation-duration: 0.2s;
+}
+
+.superhero:hover .superhero-name {
+    opacity: 0.7;
+    animation: jackInTheBox;
+    animation-duration: 0.6s;
+}
+
+.superhero:hover a {
+    display: inline-block;
+    margin-top: 8px;
+    animation: flipInX;
+    animation-duration: 1s;
+}
+
+.superhero p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.superhero .superhero-name {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    padding: 8px 0;
+    opacity: 0.3;
+    border-radius: 10%;
+}
+
+.superhero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.superhero a {
+    display: none;
+    padding: 8px 16px;
+    width: 100%;
+    text-decoration: underline;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+}
